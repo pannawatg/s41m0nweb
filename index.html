@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>un8qe</h1>
-    <div class="content">
-      <p><a href="index.html">home</a> <a href="funny.html">funny moments</a></p> <a href="ogweb.html">original design</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomial Graph Plotter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #input-container {
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polynomial Graph Plotter</h1>
+    
+    <div id="input-container">
+        <label for="polynomial">Enter Polynomial (e.g., 2x^2 + 3x + 1): </label>
+        <input type="text" id="polynomial" placeholder="e.g., 2x^2 + 3x + 1">
+        <button id="plot">Plot Graph</button>
     </div>
-    <p>*welcome to my personal website! this webpage is to just be my resident on the internet or to be my public gallery. this web is under <em>heavy</em> maintenance because homework is <mark>a bitch</mark> and would not just delete itself out of existence. you (yes, <em>you, the reader</em>) can contact me by uhh... i don't know either but i hope i'll be skilled enough to add that to this page one day i guess..... anyways, enjoy the internet!</p>
-    <hr>
-    <h2>/sites you should visit</h2>
-    <p>*well, these websites are either mine, my friends', some cool shit i found, to be useful for SK students who found this, or just <em>plain cool</em>.</p>
-    <table>
-      <tr>
-        <td><a href="https://ccsleep.net/">ccsleep</a></td>
-        <td><a href="https://sklnwza.neocities.org/">sklnwza</a></td>
-        <td><a href="https://dailybagel.neocities.org/">daily_bagel</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://skinwza.neocities.org/">skinwza</a></td>
-        <td><a href="http://www.sk.ac.th/">sk.ac.th</a></td>
-        <td><a href="https://www.mysk.school/">mysk.school</a></td>
-        <td><i>to be continued...</i></td>
-      </tr>
-      <tr>
-        <td><a href="https://www.blender.org/">blender</a></td>
-        <td><a href="https://neocities.org/">neocities</a></td>
-        <td><a href="https://www.sublimetext.com/">sublime text</a></td>
-      </tr>
-    </table>
-    <hr>
-    <a href="https://un8qe.neocities.org/">.</a>
-    <p>(c) 2024 s41m0nweb - All works licensed with <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless otherwise stated.</p>
-  </body>
+
+    <canvas id="graph" width="500" height="400"></canvas>
+    
+    <div id="result"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
